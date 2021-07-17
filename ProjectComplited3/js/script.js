@@ -121,6 +121,7 @@ if(this.innerWidth > 1024){
 							that.input[i].classList.remove('err');
 						};
 					};
+					e.preventDefault();	
 						if(errors){
 								errors = false;
 								return false;
@@ -128,7 +129,8 @@ if(this.innerWidth > 1024){
 					for(let i = 0 ; i < that.input.length ; i++){
 						that.input[i].value = '';
 					};
-					alert('Запрос...');				
+					alert('Запрос...');		
+
 			};
 			that.btnSeacrh.addEventListener('click' , that.seacrh);
 		};		
