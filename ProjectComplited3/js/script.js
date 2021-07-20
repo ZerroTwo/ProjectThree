@@ -1,6 +1,7 @@
 window.onload = function() {
   var scene = document.getElementById('scene');
   var parallax = new Parallax(scene);
+	const body = document.querySelector('body');
 	const popupConteiner = document.querySelector('.popup-conteiner');
 new ShowWorks({
 	btn:".main__menu .menu__list .menu__link",
@@ -38,7 +39,6 @@ function MenuBurger(propos){
 	that.menuBody = document.querySelector(propos.menuBody);
 	that.blockBody = propos.blockBody || false;
 	that.scroll = propos.scroll || false;
-	let body = document.querySelector('body');
 if (that.scroll){
 	that.fromEl = document.querySelectorAll(propos.fromEl);
 	that.toEl = document.querySelectorAll(propos.toEl);
@@ -98,7 +98,6 @@ if(this.innerWidth > 1024){
 			that.btnSeacrh = document.querySelector(propos.btnSeacrh);
 			that.input = document.querySelectorAll(propos.input);
 			that.addClass = propos.addClass;
-			let body = document.querySelector('body');
 			that.show = function(){
 				that.modal.classList.add(that.addClass);
 				that.close.classList.add(that.addClass);
