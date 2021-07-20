@@ -606,7 +606,7 @@ overflow-x: hidden;
 	width: 100%;
 	max-width: 210px;
 	margin: 0 5px;
-	background-color: #fbb742;
+	background-color: #ffb027;
 	-webkit-transition: .3s all ease;
 	transition: .3s all ease;
 	border-radius: 15px;
@@ -627,7 +627,7 @@ overflow-x: hidden;
 }
 .link-detailde:hover,
 .link-document:hover{
-	background-color: #ffbc7e;	
+	background-color: #fbb742;	
 }
 .netbook {
 	display: -webkit-box;
