@@ -111,10 +111,7 @@ background-color: #ffb027;
 	transition: 0.3s opacity ease;
 }	
 .menu__link:hover::before {
-		opacity: 1;
-}
-.menu__link.active {
-	border-bottom: 3px solid #fff;
+	opacity: 1;
 }
 }
 /*Размеры элементов бургера
