@@ -44,7 +44,6 @@ if (that.scroll){
 	that.toEl = document.querySelectorAll(propos.toEl);
 	for(let i = 0 ; i < that.fromEl.length ; i++){
 		that.fromEl[i].addEventListener('click' , function(event){
-			body.classList.remove('overflow');
 			that.toEl[i].scrollIntoView({behavior: "smooth" , block: "start"});
 			that.removeBurger();
 			event.preventDefault();
@@ -56,16 +55,10 @@ if (that.scroll){
 					body.classList.toggle('overflow');
 				};};
 		that.removeBurger = function (event){
-			/*
-			if(!that.scroll){
-				if(event.target !== that.menuBody){
-					return 1;
-				}
-			}*/
 				that.btn.classList.remove('active');
 				that.menuBody.classList.remove('active');
 				if(that.blockBody){
-					body.classList.toggle('overflow');
+					body.classList.remove('overflow');
 				};};
 	that.btn.addEventListener('click' , that.addBurger);
 	that.menuBody.addEventListener('click' ,	that.removeBurger );};
