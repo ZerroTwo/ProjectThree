@@ -646,9 +646,6 @@ overflow-x: hidden;
 	.decription .title {
 		font-size: 38px;
 	}
-	.title {
-		max-width: 600px;
-	}
 	.netbook {
 	   width: 100%;
 	   position: relative;
