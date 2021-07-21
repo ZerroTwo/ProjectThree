@@ -32,6 +32,9 @@ new MenuBurger({
 new MenuBurger({
 	btn:".main__menu .menu__icon",
 	menuBody:".main__menu .menu__body",
+	scroll: true,
+	fromEl:".footer__conteiner .menu__logo .menu__link",
+	toEl: ".up",
 });
 function MenuBurger(propos){
 	let that = this;
